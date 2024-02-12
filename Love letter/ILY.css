@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(255, 201, 201);
+  }
+  
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #quiz, #surprise {
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #b86464; /* Pink */
+  }
+  
+  #options {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #e74444; /* Pink */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 10px;
+    place-items: center;
+    display: inline-block;
+  }
+  
+  button:hover {
+    background-color: #e90707; /* Dark pink */
+  }
+  
+  #love-animation {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://t3.fcdn.net/jpg/03/20/35/28/360_F_320352822_Du18cSR0okuxVfYKgQIYYU794iqjQRAU.jpg'); /* Your love animation */
+    background-size: contain;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  
